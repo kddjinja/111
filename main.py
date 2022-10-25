@@ -42,10 +42,18 @@ else:
     prove = 0
 print(MB)
 
-if rB==cA:
-    MR=[[0 for i in range ()]]
-    for a in range (cA):
-        for b in range (rA):
-            for c in range (rB):
-                MA
-# for i in range()
+MBt=[[0 for i in range (rB)] for j in range (cB)]
+for i in range (rB):
+    for j in range (cB):
+        MBt[j][i]=MB[i][j]
+print(MBt)
+if cA == rB:
+    MR = [[0 for a in range(cB) for b in range(rA)]]
+    for i in range(rA):
+        for j in range(cA):
+            for k in range(cB):
+                MR[i][i] = MA[i][j] * MBt[j][k]
+else:
+    prove = 0
+
+    # for i in range()
